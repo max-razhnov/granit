@@ -1,0 +1,35 @@
+.header .wrapper {
+  padding: 30px 0 0 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary {
+  height: 40px;
+  border: solid 2px @main_black;
+  color: @main_black;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.83;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact-info {
+  margin-right: 30px;
+  position: relative;
+  right: 0;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  font: 900 18px / normal @fnt_med;
+  line-height: 1.22;
+
+  & > span {
+    font: normal 11px / normal @fnt_reg;
+    color: @light_black;
+    line-height: 2;
+  }
+}

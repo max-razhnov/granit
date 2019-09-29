@@ -1,0 +1,437 @@
+.banner {
+  background: url("../img/banner.png") no-repeat center / cover;
+
+  & .wrapper {
+    display: block;
+    padding-top: 170px;
+
+    & > span {
+      color: @white;
+      font-size: 12px;
+
+      & > a {
+        text-decoration: none;
+        color: @white;
+        font-weight: 900;
+      }
+    }
+  }
+
+  & .title {
+    font-size: 36px;
+    font-weight: 900;
+    color: @white;
+    text-transform: uppercase;
+  }
+
+  & .subtitle {
+    margin-top: 40px;
+    font-weight: normal;
+    color: @white;
+    font-size: 14px;
+    line-height: 1.57;
+  }
+}
+
+.title {
+  font-family: @fnt_med;
+}
+
+.link {
+  margin: 65px 30px 140px 0;
+  max-width: 200px;
+  width: 100%;
+  height: 50px;
+  background: @light_yellow;
+  color: @btn_black;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.83;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 60px 0 80px 0;
+  width: 100%;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 900;
+  color: @main_black;
+}
+
+.price {
+  color: @medim_black;
+  margin: 30px;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.current {
+  & .wrapper {
+    padding-top: 80px;
+    flex-direction: column;
+  }
+
+  & .title {
+    color: @main_black;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  & .card-title {
+    margin: 46px 0 20px 0;
+  }
+
+  & .card__item {
+    max-width: 300px;
+    width: 100%;
+    border: solid 2px @bdr_light_black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:nth-child(1) {
+      & .card-title {
+        margin-top: 31px;
+      }
+
+      & > img {
+        margin-top: 38px;
+      }
+    }
+
+    &:nth-child(2) > img {
+      margin-top: 52px;
+    }
+
+    &:nth-child(3) {
+      & .card-title {
+        margin-top: 37px;
+      }
+    }
+  }
+
+  & .card-subtitle {
+    text-align: center;
+    max-width: 225px;
+    font-size: 13px;
+    color: @light_gray;
+  }
+
+  & .link {
+    margin: 0 0 38px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.about {
+  background: @banner_gray;
+
+  & .wrapper {
+    padding-top: 80px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  & .title {
+    color: @main_black;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  & .card__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+    border: solid 2px @white;
+
+    &:nth-child(1):before {
+      display: block;
+      margin: 40px;
+      content: url("../img/pig.png");
+    }
+
+    &:nth-child(2):before {
+      width: 50px;
+      height: 53px;
+      display: block;
+      margin: 40px;
+      content: url("../img/car.png");
+    }
+
+    &:nth-child(3):before {
+      display: block;
+      margin: 40px;
+      content: url("../img/telega.png");
+    }
+  }
+
+  & .card-title {
+    font-size: 15px;
+    color: @main_black;
+    font-weight: 900;
+  }
+
+  & .card-subtitle {
+    margin: 20px 0 43px 0;
+    text-align: center;
+    color: @main_black;
+    font-size: 12px;
+    line-height: 1.5;
+
+    &:nth-child(1) {
+      max-width: 215px;
+    }
+
+    &:nth-child(2) {
+      max-width: 240px;
+    }
+
+    &:nth-child(3) {
+      max-width: 250px;
+    }
+  }
+}
+
+.card__active {
+  background: @white;
+  box-shadow: 0px 9px 21px 0 @shadow_card;
+}
+
+.popular {
+  & .wrapper {
+    padding-top: 80px;
+    flex-direction: column;
+  }
+
+  & .title {
+    text-transform: uppercase;
+    color: @main_black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  & .card__item {
+    position: relative;
+    border: solid 2px @bdr_light_black;
+    max-width: 220px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:nth-child(n):before {
+      position: relative;
+      margin: 20px 0 22px 0;
+    }
+
+    &:nth-child(1):before {
+      content: url("../img/cheben1.png");
+    }
+
+    &:nth-child(2):before {
+      content: url("../img/cheben2.png");
+    }
+
+    &:nth-child(3):before {
+      content: url("../img/cheben3.png");
+    }
+
+    &:nth-child(4):before {
+      content: url("../img/cheben4.png");
+    }
+  }
+
+  & .card-subtitle {
+    position: relative;
+    font-size: 13px;
+    color: @main_black;
+    max-width: 185px;
+  }
+
+  & .link {
+    position: relative;
+    margin: 25px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.sale:after {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 900;
+  color: @white;
+  content: "АКЦИЯ";
+  width: 55px;
+  height: 23px;
+  background: @red;
+}
+
+.services {
+  background: @banner_gray;
+
+  & .wrapper {
+    padding-top: 80px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  & .title {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: @main_black;
+    font-weight: 900;
+  }
+
+  & .card__item {
+    border: solid 2px @white;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:nth-child(n):before {
+      margin: 52px 0 36px 0;
+    }
+
+    &:nth-child(1):before {
+      height: 120px;
+      content: url("../img/samosval.png");
+    }
+
+    &:nth-child(2):before {
+      height: 120px;
+      content: url("../img/traktor.png");
+    }
+
+    &:nth-child(3):before {
+      height: 120px;
+      content: url("../img/traktor2.png");
+    }
+  }
+
+  & .card-title {
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 900;
+
+    & > a {
+      color: @main_black;
+      text-decoration: none;
+    }
+  }
+}
+
+.map {
+  position: relative;
+  background: url("../img/map.png") no-repeat center/ cover;
+
+  &:before {
+    position: absolute;
+    top: 44%;
+    left: 32%;
+    content: url("../img/metka.png");
+  }
+
+  & .wrapper {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  & .card__item {
+    margin: 80px 0;
+    background: @white;
+    max-width: 380px;
+    width: 100%;
+
+    & .wrapper {
+      margin: 0 auto;
+      padding-top: 60px;
+      max-width: 242px;
+      width: 100%;
+      align-items: flex-start;
+    }
+
+    & .title {
+      color: @main_black;
+      font-size: 20px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 53px;
+    }
+
+    & .contact {
+      position: relative;
+      padding-left: 30px;
+      width: 100%;
+      flex-direction: column;
+
+      & > a {
+        text-decoration: none;
+        color: @main_black;
+
+        & > span {
+          line-height: 2.14;
+          font-size: 14px;
+          font-weight: 900;
+          text-align: left;
+        }
+      }
+
+      &:before {
+        margin-top: 5px;
+        position: absolute;
+        left: 0;
+        content: url("../img/phone_icon.png");
+      }
+    }
+  }
+}
+
+.address {
+  font-size: 14px;
+  margin: 40px 0 40px 0;
+  width: 100%;
+  padding-left: 30px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    content: url("../img/metka_icon.png");
+  }
+}
+
+.mail {
+  position: relative;
+  font-size: 14px;
+  margin-bottom: 70px;
+  padding-left: 30px;
+  text-decoration: none;
+  color: @main_black;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    content: url("../img/main_icon.png");
+  }
+}

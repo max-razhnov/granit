@@ -1,0 +1,35 @@
+.footer {
+  background: @main_black;
+
+  & .nav {
+    display: flex;
+    flex-direction: column;
+
+    & > span {
+      margin-top: 55px;
+      color: @white;
+      font-size: 12px;
+    }
+  }
+
+  & .wrapper {
+    justify-content: space-between;
+    padding: 50px 0 20px 0;
+  }
+
+  & .primary {
+    border-color: @white;
+    color: @white;
+  }
+
+  & .contact {
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  & .contact-info {
+    color: @white;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
