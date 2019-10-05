@@ -20,11 +20,30 @@
     height: 60px;
 
     & > a {
+      text-align: center;
       font-size: 14px;
       font-weight: 900;
       line-height: 1.57;
       color: @black;
       text-decoration: none;
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  .menu {
+    padding: 0 10px;
+  }
+}
+@media all  and (max-width: 425px){
+  .menu__item > a {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .menu__item {
+    &:nth-child(5) {
+      display: none;
     }
   }
 }

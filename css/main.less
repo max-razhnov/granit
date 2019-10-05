@@ -4,17 +4,6 @@
   & .wrapper {
     display: block;
     padding-top: 170px;
-
-    & > span {
-      color: @white;
-      font-size: 12px;
-
-      & > a {
-        text-decoration: none;
-        color: @white;
-        font-weight: 900;
-      }
-    }
   }
 
   & .title {
@@ -37,8 +26,24 @@
   font-family: @fnt_med;
 }
 
+.btn__group {
+  margin-top: 65px;
+  padding-bottom: 140px;
+
+  & > span {
+    color: @white;
+    font-size: 12px;
+
+    & > a {
+      text-decoration: none;
+      color: @white;
+      font-weight: 900;
+    }
+  }
+}
+
 .link {
-  margin: 65px 30px 140px 0;
+  margin-right: 30px;
   max-width: 200px;
   width: 100%;
   height: 50px;
@@ -53,7 +58,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 60px 0 80px 0;
+  margin: 0 0 80px 0;
   width: 100%;
 }
 
@@ -61,6 +66,10 @@
   font-size: 16px;
   font-weight: 900;
   color: @main_black;
+}
+
+.card__item {
+  margin-top: 60px;
 }
 
 .price {
@@ -433,5 +442,42 @@
     position: absolute;
     left: 0;
     content: url("../img/main_icon.png");
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .cards {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .map {
+    &:before {
+      display: none;
+    }
+
+    & .card__item {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+@media all and (max-width: 425px) {
+  .banner .title {
+    font-size: 26px;
+  }
+  .link {
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .btn__group {
+    margin-top: 55px;
+    & > span {
+      margin-top: 10px;
+    }
   }
 }

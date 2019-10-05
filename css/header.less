@@ -1,5 +1,6 @@
 .header .wrapper {
   padding: 30px 0 0 0;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -31,5 +32,28 @@
     font: normal 11px / normal @fnt_reg;
     color: @light_black;
     line-height: 2;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .header .contact {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .header .contact-info {
+    text-align: center;
+    margin-right: 0px;
+
+  }
+}
+
+@media all and (max-width: 375px) {
+  .header .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header  .contact-info {
+    margin-bottom: 10px;
   }
 }
