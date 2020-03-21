@@ -12,6 +12,5 @@ node_modules
 .vscode
 .cache
 
-
 build
 dist
