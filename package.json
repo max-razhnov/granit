@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html -d build --public-url .",
+    "start": "npm run transpile && parcel index.html --open",
+    "build": "npm run transpile && parcel build index.html -d build --public-url .",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build",
     "transpile": "lessc ./src/css/styles.less ./src/css/styles.css",
