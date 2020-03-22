@@ -8,7 +8,6 @@
     "build": "parcel build index.html -d build --public-url .",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build",
-    "transpile": "lessc ./src/css/styles.less ./src/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "max razhnov",
